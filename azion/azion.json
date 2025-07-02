@@ -1,0 +1,58 @@
+{
+  "name": "ficsit-remote-monitoring-dasboard-on-azion",
+  "bucket": "ficsit-remote-monitoring-dasboard-on-azion",
+  "preset": "react",
+  "env": "production",
+  "prefix": "20250702171537",
+  "not-first-run": true,
+  "function": {
+    "id": 47098,
+    "name": "__DEFAULT__",
+    "file": ".edge/worker.js",
+    "args": "azion/args.json",
+    "instance-id": 43584,
+    "instance-name": "__DEFAULT__",
+    "cache-id": 0
+  },
+  "application": {
+    "id": 1751478431,
+    "name": "__DEFAULT__"
+  },
+  "domain": {
+    "id": 1751478475,
+    "name": "ficsit-remote-monitoring-dasboard-on-azion",
+    "domain_name": "tk3xhpr2nv.map.azionedge.net",
+    "url": "https://tk3xhpr2nv.map.azionedge.net"
+  },
+  "rt-purge": {
+    "purge_on_publish": true
+  },
+  "origin": [
+    {
+      "origin-id": 226673,
+      "origin-key": "bbb94ef7-0658-41e3-bfb2-0e551f94168f",
+      "name": "origin-storage-default"
+    }
+  ],
+  "rules-engine": {
+    "created": false,
+    "rules": [
+      {
+        "id": 442821,
+        "name": "Set Storage Origin for All Requests",
+        "phase": "request"
+      },
+      {
+        "id": 442822,
+        "name": "Deliver Static Assets",
+        "phase": "request"
+      },
+      {
+        "id": 442823,
+        "name": "Redirect to index.html",
+        "phase": "request"
+      }
+    ]
+  },
+  "cache-settings": []
+}

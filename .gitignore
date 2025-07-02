@@ -6,3 +6,6 @@ node_modules/
 dist/
 build/
 .npmrc
+#Paths added by Azion CLI
+.edge/
+.vulcan
